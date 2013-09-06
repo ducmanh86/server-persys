@@ -33,3 +33,6 @@
   <li><a href="http://web2py.com/book">{{=T('Documentation')}}</a></li>
 </ul>
 {{end}}
+{{if request.is_local:}}
+{{=response.toolbar()}}
+{{pass}}
