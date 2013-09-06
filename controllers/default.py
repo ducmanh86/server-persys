@@ -22,6 +22,11 @@ def index():
     return dict(message=T('Hello World'))
 
 
+def error():
+    response.view = 'generic.html'
+    return request.vars
+    
+
 def user():
     """
     exposes:
