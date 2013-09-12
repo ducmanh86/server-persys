@@ -20,11 +20,6 @@ def index():
     """
     response.flash = T("Welcome to web2py!")
     return dict(message=T('Hello World'))
-
-
-def error():
-    response.view = 'generic.html'
-    return request.vars
     
 
 def user():
